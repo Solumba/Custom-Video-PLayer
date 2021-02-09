@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: AbeeZee;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    max-height: 100vh;
+    background-color: #666;
+}
+
+h1 {
+    color: #fff;
+}
+
+.video-screen {
+    cursor: pointer;
+    background-color: #000!important;
+    width: 50%;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+    width: 50%;
+    opacity: 0.8;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.controls .button {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+}
+
+.controls .fa-play {
+    color: lightgreen;
+}
+
+.controls .fa-stop {
+    color: tomato;
+}
+
+/* to be injected using javascript */
+.controls .fa-pause {
+    color: #fff;
+}
+
+.timestamp {
+    color: #fff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px){
+    .video-screen, .controls{
+        width: 90%;
+    }
+}
